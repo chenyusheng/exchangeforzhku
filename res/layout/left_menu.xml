@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_frame_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/id_img1"
+                style="@style/img_style"
+                android:src="@drawable/img_11" />
+            <TextView
+                style="@style/text_style"
+                android:layout_toRightOf="@id/id_img1"
+                android:text="首页" />
+            <Button
+                android:id="@+id/id_homepage"
+                style="@style/Button_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/id_img2"
+                style="@style/img_style"
+                android:src="@drawable/img_22" />
+            <TextView
+                style="@style/text_style"
+                android:layout_toRightOf="@id/id_img2"
+                android:text="我的信息" />
+            <Button
+                android:id="@+id/id_mymessage"
+                style="@style/Button_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/id_img3"
+                style="@style/img_style"
+                android:src="@drawable/img_33" />
+            <TextView
+                style="@style/text_style"
+                android:layout_toRightOf="@id/id_img3"
+                android:text="设置" />
+            <Button
+                android:id="@+id/id_setting"
+                style="@style/Button_style"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/id_img4"
+                style="@style/img_style"
+                android:src="@drawable/img_44" />
+            <TextView
+                style="@style/text_style"
+                android:layout_toRightOf="@id/id_img4"
+                android:text="退出" />
+            <Button
+                android:id="@+id/id_out"
+                style="@style/Button_style"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_marginBottom="5dp" >
+        <ImageButton
+            android:id="@+id/bt_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dp"
+            android:src="@drawable/people" />
+        <TextView 
+            android:id="@+id/tv_name"
+            android:text="点击登录"
+            android:textSize="10sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/bt_head"
+/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:exzhku="http://schemas.android.com/apk/res/com.example.exchangeforzhku"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.exchangeforzhku.view.ExchangeforZhku
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        exzhku:rightPadding="130dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/left_menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back1" >
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.exchangeforzhku.view.ExchangeforZhku>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#262837"
+        android:gravity="center"
+        android:text="首页"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_more"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/more1"
+        android:onClick="toggleMenu" />
+
+    <Button
+        android:id="@+id/bt_addMessage"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit1" />
+
+</RelativeLayout>

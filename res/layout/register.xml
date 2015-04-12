@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/title_style"
+        android:text="注册" />
+
+    <EditText
+        android:id="@+id/et_reName"
+        style="@style/et_style1"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="40dp"
+        android:hint="昵称" />
+
+    <EditText
+        android:id="@+id/et_rePhone"
+        style="@style/et_style1"
+        android:layout_below="@id/et_reName"
+        android:hint="手机号"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/et_reRassword"
+        style="@style/et_style1"
+        android:layout_below="@id/et_rePhone"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        style="@style/tv_style1"
+        android:layout_below="@id/et_reRassword"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/bt_backLogin"
+        style="@style/bt_style1"
+        android:text="返回"/>
+
+</RelativeLayout>
